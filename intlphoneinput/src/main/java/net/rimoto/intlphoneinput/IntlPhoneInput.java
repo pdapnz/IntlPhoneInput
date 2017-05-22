@@ -237,9 +237,9 @@ public class IntlPhoneInput extends RelativeLayout {
 
             if (mIntlPhoneInputListener != null) {
                 boolean validity = isValid();
-                if (validity != lastValidity) {
+                //if (validity != lastValidity) {
                     mIntlPhoneInputListener.done(IntlPhoneInput.this, validity);
-                }
+                //}
                 lastValidity = validity;
             }
         }
